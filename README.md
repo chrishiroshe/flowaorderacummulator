@@ -72,69 +72,6 @@ dotnet run --project OrderGenerator.Web
 dotnet run --project OrderGenerator
 ```
 
----
-### 🔹 Build with Kubernetes and Load Minicube
-
-```bash
-docker build -t ordersystem-api:vX -f .\Order.Api\Dockerfile
-minikube image load ordersysetm-api:vX
-```
-
----
-### 🔹 Deploy Minicube
-
-```bash
-kubectl apply -f .\k8s\postgres.yaml
-kubectl apply -f .\k8s\kafka.yaml
-kubectl apply -f .\k8s\migration-job.yaml
-kubectl apply -f .\k8s\orders-api-deployment.yaml
-kubectl apply -f .\k8s\orders-workers-deployment.yaml
-kubectl apply -f .\k8s\prometheus.yaml
-kubectl apply -f .\k8s\grafana.yaml
-```
-
----
-### 🔹 Basic Observability 
-
-```bash
-kubectl get pods -n order-system
-kubectl logs <pod-name> -n order-system 
-```
-
----
-
-
-## 🔁 Resilience with Polly
-
-The application uses Polly to handle failures:
-
-Retry policies
-Circuit breaker
-Timeout strategies
-
-Ensuring the system remains stable under transient failures.
-
----
-
-## 📈 Features
-Event-driven architecture
-Asynchronous processing
-Fault tolerance
-Scalable design
-Clean and maintainable code
-
----
-## 🧠 Learnings
-
-This project explores:
-
-Designing distributed systems
-Handling eventual consistency
-Implementing resilience patterns
-Working with messaging systems
-
----
-
 ## 📂 Project Structure
 ```bash
 src/
@@ -143,15 +80,10 @@ src/
  ├── Domain
  ├── Infrastructure
 ```
----
-## 🚀 Future Improvements
-Add observability (Datadog)
-Add authentication & authorization
-Improve monitoring and logging
 
----
 ## 👩‍💻 Author
 
 Senior Backend .NET Developer
-Focused on scalable, resilient, and high-performance systems
+https://github.com/chrishiroshe/flowaorderacummulator
+
 

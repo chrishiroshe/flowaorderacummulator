@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="OrderGenerator.Application/OrderGenerator.Application.csproj" />
+  <Project Path="OrderGenerator.Domain/OrderGenerator.Domain.csproj" />
+  <Project Path="OrderGenerator.Infraestructure/OrderGenerator.Infraestructure.csproj" />
+  <Project Path="OrderGenerator.Web/OrderGenerator.Web.csproj" />
+  <Project Path="OrderGenerator/OrderGenerator.csproj" />
+</Solution>
